@@ -38,23 +38,32 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #4e4e4e;
-    
+}
+
+.container .inputSection > div:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 div > form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
 .container .inputSection > div form input {
-    
+    width: 100%;
     padding: 12px;
     font-size: 16px;
     border-radius: 20px;
     border: 0;
+}
+
+.container .inputSection > div form input:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.1s ease-in-out;
 }
 
 .container .inputSection > div > .header {
@@ -72,7 +81,7 @@ div > form {
 
 .container .outputSection {
     background-color: rgb(245, 239, 204);
-    height: 800px;
+    height: auto;
 }
 
 .container .outputSection > div {
@@ -82,6 +91,10 @@ div > form {
     flex-direction: column;
     gap: 20px;
     background-color: rgb(245, 239, 204);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container .outputSection > div:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
@@ -110,6 +123,33 @@ div > form {
 .contact img {
     height: 40px;
     border-radius: 50%;
+}
+
+button {
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    background-color: #426c9b;
+    width: 200px;
+    padding: 8px;
+    border: 0;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #4d82b4;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.1s ease-in-out;
+}
+
+.btnReset {
+    width: 100px;
+    padding: 5px;
+    background-color: #b44d4d;
+}
+
+.btnReset:hover {
+    background-color: #d15f5f;
 }
 
 
